@@ -1,0 +1,11 @@
+{
+  "name": "@pcr-ui/eslint-config",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "D": "^1.0.0",
+    "eslint": "^8.57.1"
+  }
+}

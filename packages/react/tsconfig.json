@@ -1,0 +1,4 @@
+{
+  "extends": "@pcr-ui/ts-config/react.json",
+  "include": ["src"]
+}
