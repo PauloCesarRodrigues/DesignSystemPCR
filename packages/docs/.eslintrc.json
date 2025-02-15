@@ -1,0 +1,3 @@
+{
+  "extends": "@pcr-ui/eslint-config"
+}
