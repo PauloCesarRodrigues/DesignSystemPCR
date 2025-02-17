@@ -29,6 +29,6 @@ jobs:
         working-directory: ./packages/docs
         run: |
           touch storybook-static/.nojekyll
-          npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+          npm run deploy-storybook -- --ci --existing-output-dir=storybook-static --remote-url="https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PauloCesarRodrigues/DesignSystemPCR.git"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
