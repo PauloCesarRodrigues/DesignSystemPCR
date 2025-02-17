@@ -1,0 +1,3 @@
+import{j as t}from"./index-D6gsYmJY.js";import{useMDXComponents as r}from"./index-CIPZa9B8.js";import{M as i}from"./DocsRenderer-CFRXHY34-BKkWhP7L.js";import"./index-Ban83id2.js";import"./index-7LVPDKFp.js";import"./iframe-CXldrf16.js";import"./index-DCYkr5fF.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";import"./react-18-Cmb2N9F3.js";function e(n){const o={h1:"h1",p:"p",...r(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(i,{title:"Home"}),`
+`,t.jsx(o.h1,{id:"pcr-ui",children:"PCR UI"}),`
+`,t.jsx(o.p,{children:"Design System"})]})}function f(n={}){const{wrapper:o}={...r(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{f as default};
