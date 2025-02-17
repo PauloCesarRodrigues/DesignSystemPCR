@@ -1,3 +1,4 @@
+---
 name: Deploy docs
 on:
   push:
@@ -26,16 +27,8 @@ jobs:
 
       - name: Deploy storybook
         working-directory: ./packages/docs
-        run: |
-          touch storybook-static/.nojekyll
-          npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-
-      - name: Create gh-pages branch and push
-        run: |
-          git checkout --orphan gh-pages
-          git reset --hard
-          git add .
-          git commit -m "Deploy Storybook"
-          git push origin gh-pages --force
+        run: touch storybook-static/.nojekyll npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#
