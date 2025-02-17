@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "turbo run dev --parallel",
     "deploy-storybook": "storybook-to-ghpages --ci --existing-output-dir=storybook-static --remote-url=https://x-access-token:${GH_TOKEN}@github.com/PauloCesarRodrigues/DesignSystemPCR.git",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=@pcr-ui/packages/docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.28.0",
     "@storybook/storybook-deployer": "^2.8.16",
     "turbo": "^2.4.2"
   },

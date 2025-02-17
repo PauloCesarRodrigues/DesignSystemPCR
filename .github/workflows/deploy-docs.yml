@@ -19,6 +19,9 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
+        env: 
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: paulocesarrodrigues-projects
 
       - run: npm run build
         env:
