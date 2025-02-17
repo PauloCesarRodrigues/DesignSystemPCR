@@ -1,5 +1,1 @@
-🎨 Design System Link:
-
-```bash
-  https://paulocesarrodrigues.github.io/DesignSystemPCR/?path=/docs/tokens-colors--docs
-```
+🎨 [Design System Link](https://paulocesarrodrigues.github.io/DesignSystemPCR/?path=/docs/tokens-colors--docs)
